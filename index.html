@@ -6,17 +6,24 @@
     <meta name="referrer" content="origin">
     <title>Springboard — We bridge talents to the Philippine business industry</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
   </head>
   <body>
     <div id="container">
       <a href="http://olegdeleon.github.io/springboard"><img src="assets/img/springboard-logo.png" id="logo"></a>
       <h1>We bridge talents to the Philippine business industry.</h1>
-      <div id="form-container">
+
+      <div class="button-group">
+        <button type="button" class="tabs -small -outline">For Jobseekers</button>
+        <button type="button" class="tabs -small -none">For Businesses</button>
+      </div>
+
+      <div class="form-container">
         <h2>Get hired asap. Sign up today.</h2>
         <form action="https://formspree.io/hello@olegdeleon.com" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" placeholder="Juan dela Cruz" name="name" required>
+            <input type="text" placeholder="Juan dela Cruz" name="Name" required>
           </div>
 
           <div class="form-group">
@@ -26,8 +33,40 @@
 
           <div class="form-group">
             <label for="contact">Contact Number</label>
-            <input type="tel" name="contact" required>
+            <input type="tel" name="Contact" required>
           </div>
+
+          <input type="text" name="_gotcha" style="display: none">
+
+          <button type="submit" value="Send">Submit</button>
+
+        </form>
+
+      </div>
+
+      <div class="form-container hidden">
+        <h2>We can help you find talent. <br>Sign up today.</h2>
+        <form action="https://formspree.io/hello@olegdeleon.com" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Juan dela Cruz" name="Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="position">Position</label>
+            <input type="text" placeholder="CEO" name="Position" required>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" placeholder="ABC Company" name="Company" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="me@juandelacruz.com" name="_replyto" required>
+          </div>
+
 
           <input type="text" name="_gotcha" style="display: none">
 
