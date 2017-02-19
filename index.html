@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="referrer" content="origin">
     <title>Springboard — We bridge talents to the Philippine business industry</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/animate.css">
+    <script type="text/javascript" src="assets/js/lib/jquery-3.1.1.min.js" charset="utf-8"></script>
   </head>
   <body>
     <div id="container">
@@ -14,11 +15,11 @@
       <h1>We bridge talents to the Philippine business industry.</h1>
 
       <div class="button-group">
-        <button type="button" class="tabs -small -outline">For Jobseekers</button>
-        <button type="button" class="tabs -small -none">For Businesses</button>
+        <button type="button" class="tabs -small -outline" id="jobseeker">For Jobseekers</button>
+        <button type="button" class="tabs -small -none" id="business">For Businesses</button>
       </div>
 
-      <div class="form-container">
+      <div class="form-container animated one">
         <h2>Get hired asap. Sign up today.</h2>
         <form action="https://formspree.io/hello@olegdeleon.com" method="POST">
           <div class="form-group">
@@ -33,7 +34,7 @@
 
           <div class="form-group">
             <label for="contact">Contact Number</label>
-            <input type="tel" name="Contact" required>
+            <input type="tel" placeholder="(63) 917 999 9999" name="Contact" required>
           </div>
 
           <input type="text" name="_gotcha" style="display: none">
@@ -44,7 +45,7 @@
 
       </div>
 
-      <div class="form-container hidden">
+      <div class="form-container animated two hidden">
         <h2>We can help you find talent. <br>Sign up today.</h2>
         <form action="https://formspree.io/hello@olegdeleon.com" method="POST">
           <div class="form-group">
@@ -60,6 +61,11 @@
           <div class="form-group">
             <label for="company">Company</label>
             <input type="text" placeholder="ABC Company" name="Company" required>
+          </div>
+
+          <div class="form-group">
+            <label for="industry">Industry</label>
+            <input type="text" placeholder="Agriculture" name="Industry" required>
           </div>
 
           <div class="form-group">
