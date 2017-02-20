@@ -1,8 +1,17 @@
 var formGroup = document.getElementsByClassName('form-container');
-var button = document.querySelector('.tabs');
+var jobseeker = document.querySelector('.tabs');
+var business = document.getElementById('business');
 
 
-button.addEventListener("click", function(){
+jobseeker.addEventListener("click", function(){
+  for(var i = 0; i < formGroup.length; i++){
+    formGroup[i].classList.toggle('hidden');
+    formGroup[i].classList.add('animated');
+    formGroup[i].classList.add('fadeIn');
+  }
+});
+
+business.addEventListener("click", function(){
   for(var i = 0; i < formGroup.length; i++){
     formGroup[i].classList.toggle('hidden');
     formGroup[i].classList.add('animated');
