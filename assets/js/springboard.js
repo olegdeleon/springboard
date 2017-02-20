@@ -1,20 +1,25 @@
 var formGroup = document.getElementsByClassName('form-container');
-var jobseeker = document.querySelector('.tabs');
+var jobseeker = document.getElementById('jobseeker');
 var business = document.getElementById('business');
+var one = document.querySelector('.one');
+var two = document.querySelector('.two');
 
 
 jobseeker.addEventListener("click", function(){
-  for(var i = 0; i < formGroup.length; i++){
-    formGroup[i].classList.toggle('hidden');
-    formGroup[i].classList.add('animated');
-    formGroup[i].classList.add('fadeIn');
-  }
+  one.classList.remove('hidden');
+  one.classList.add('fadeIn');
+  jobseeker.classList.add('-outline');
+  two.classList.add('hidden');
+  business.classList.remove('-outline');
+  business.classList.add('-none');
 });
 
 business.addEventListener("click", function(){
-  for(var i = 0; i < formGroup.length; i++){
-    formGroup[i].classList.toggle('hidden');
-    formGroup[i].classList.add('animated');
-    formGroup[i].classList.add('fadeIn');
-  }
+  two.classList.remove('hidden');
+  two.classList.add('fadeIn');
+  business.classList.add('-outline');
+  one.classList.add('hidden');
+  jobseeker.classList.remove('-outline');
+  jobseeker.classList.add('-none');
+
 });
