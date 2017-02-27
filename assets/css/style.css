@@ -67,6 +67,19 @@ button:hover {
   background: #30846e;
 }
 
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  padding: 10px 20px;
+  width: 320px;
+}
+
+select:focus {
+  outline: none;
+}
+
 #container {
   max-width: 650px;
   margin: 0 auto;
@@ -134,11 +147,7 @@ button:hover {
     padding-left: 15px;
   }
 
-  input {
-    width: 274px;
-  }
-
-  button {
+  button, input, select {
     width: 274px;
   }
 
@@ -152,11 +161,7 @@ button:hover {
     padding-left: 15px;
   }
 
-  input {
-    width: 247px;
-  }
-
-  button {
+  button, input, select {
     width: 247px;
   }
 
