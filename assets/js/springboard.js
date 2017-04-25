@@ -4,7 +4,6 @@ var business = document.getElementById('business');
 var one = document.querySelector('.one');
 var two = document.querySelector('.two');
 
-
 jobseeker.addEventListener("click", function(){
   one.classList.remove('hidden');
   one.classList.add('fadeIn');
@@ -21,5 +20,4 @@ business.addEventListener("click", function(){
   one.classList.add('hidden');
   jobseeker.classList.remove('-outline');
   jobseeker.classList.add('-none');
-
 });
