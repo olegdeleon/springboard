@@ -1,9 +1,9 @@
 body {
+  background: url(../img/springboard-bg.png) no-repeat center center fixed;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  background: url(../img/springboard-bg.png) no-repeat center center fixed;
   font-family: 'Helvetica', sans-serif;
 }
 
